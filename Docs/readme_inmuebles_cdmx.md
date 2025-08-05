@@ -28,8 +28,12 @@ Este proyecto consiste en el análisis de una base de datos de inmuebles en la C
 - Filtrar apartamentos con al menos 2 dormitorios, alquiler menor a MXN 10500 y superficie mayor a 70 m².
 
 ### 6. Crear columnas adicionales para DEV
-- Crear columnas numéricas: 'valor_mensual' (alquiler + condominio mensual) y 'valor_anual' (impuesto + 12 meses de alquiler y condominio).
-- Crear columnas categóricas: 'Descripcion' (resumen de la propiedad) y 'Tiene_suite' (indica si tiene suite).
+- Crear columna **valor_mensual**:
+    - gastos mensuales de cada propiedad + alquiler + condominio 
+- Crear columna **valor_anual**: 
+    - gasto anual por propiedad (impuesto + 12 meses de alquiler y condominio).
+- Crear columna **Suites**: 
+    - indique únicamente si la propiedad tiene o no suites, sin importar la cantidad.
 
 ### 7. Guardar los datos finales
 - Almacenar los DataFrames procesados en formato CSV.
